@@ -36,12 +36,12 @@
     			for(i = 0; i<=n; i++){
     				arr[i] = -1;
     			}
-    			arr[0] = 1;
+    			arr[0] = 1;                     //should never be accessed, but just in case
     			arr[1] = 1;
     			arr[2] = 1;
     			document.getElementById("printArea").innerHTML = " ";
     			for(i = 1; i<n; i++){									//iterate through the fib numbers from 1 to n-1
-    				document.getElementById("printArea").innerHTML += getFib(i, arr) + " ";
+    				document.getElementById("printArea").innerHTML += getFib(i, arr) + " ";     //add to HTML
     			}
     			document.getElementById("printArea").innerHTML += "<b>" + getFib(n, arr) + "</b>";   //make the last one (nth) bold
     			
